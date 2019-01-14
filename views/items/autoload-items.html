@@ -1,0 +1,11 @@
+<div class='dragzone wrapper autoload-pd' ng-repeat='item in suggestedProducts ' draggable='true' id='{{item.id}}'
+    ondragstart='angular.element(this).scope().dragStart(event)' ondragend='angular.element(this).scope().dragEnd(event)'
+    value='{{item.price}}'>
+    {{item.name}}
+</div>
+
+<div class='dragzone wrapper autoload-pd' ng-repeat='item in suggestedAddOns ' draggable='true' id='{{item.id}}'
+    ondragstart='angular.element(this).scope().dragStart(event)' ondragend='angular.element(this).scope().dragEnd(event)'
+    value='{{item.price}}'>
+    {{item.name}}
+</div>

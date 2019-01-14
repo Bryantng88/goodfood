@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" ng-app="goodFood">
+
+<head>
+	<title>GoodFood</title>
+	<script src="css/jquery.min.js"></script>
+	<script src="javascript/angular-1.4.5/angular.min.js"></script>
+	<script src="javascript/angular-1.4.5/angular-route.js"></script>
+	<script src="css/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/home/style.css">
+	<link rel="stylesheet" type="text/css" href="css/menu/style.css">
+	<link rel="stylesheet" type="text/css" href="css/order/style.css">
+
+	<link rel="stylesheet" type="text/css" href="icons/font-awesome-4.7.0/css/font-awesome.css">
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous"> -->
+
+
+
+	<script src="javascript/app/data.js"></script>
+
+
+	<!-- app -->
+	<script src="javascript/app/app.js"></script>
+
+	<!--services-->
+	<script src="javascript/app/service/orderRule.js"></script>
+
+	<!-- controllers -->
+	<script src="javascript/app/controllers/home.js"></script>
+	<script src="javascript/app/controllers/menu.js"></script>
+	<script src="javascript/app/controllers/order.js"></script>	
+
+
+
+	<!--directives-->
+	<script src="javascript/app/directives/item-description.js"></script>
+	<script src="javascript/app/directives/custom-drop.js"></script>
+
+
+</head>
+
+<body>
+	<div class="default-page" ng-controller="HomeCtrl" > 
+		<div class="container">
+			<div class="col-md-4">
+				<h1>Goodfood</h1>
+			</div>
+			<div class="col-md-6">
+				<ul class="nav navbar-nav" ng-repeat="item in navBar">
+					<li ng-class="{'active': navItem.name == 'menu'}"><a href="#/{{item.name}}" show-item>{{item.name}}</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2" id="buttonGroup">
+				<button class="btn btn-success wrapper" data-target="#loginModal" data-toggle="modal">login</button>
+				<!-- <button class="btn btn-success" data-target="#registerModal" data-toggle="modal">Register</button> -->
+			</div>
+		</div>
+
+		<div class="container">
+		</div>
+
+	</div>
+
+	<div class="content">
+		<div ng-view></div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<h1>this is a footer</h1>
+		</div>
+	</div>
+
+	<!-- <div ng-include="'views/modal/login.html'"></div>
+	<div ng-include="'views/modal/register.html'"></div> -->
+
+</body>
+
+</html>

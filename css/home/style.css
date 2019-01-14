@@ -1,0 +1,129 @@
+body{
+    background-color: floralwhite;
+}
+
+.introduction 
+.container:nth-child(1) {
+    height: 400px !important;
+    border: 2px solid forestgreen !important;
+}
+
+.introduction
+.container:nth-child(2) {
+    border:none;
+}
+
+.introduction 
+.container 
+.paragraph-wrapper{
+    height: 250px;
+}
+
+/*****************STEPBAR*******************/
+
+.stepbar-wrapper {
+    margin-top:250px;
+    counter-reset: step
+}
+
+.stepbar-wrapper li{
+    list-style-type: none;
+      width: 25%;
+      float: left;
+      font-size: 20px;
+      position: relative;
+      text-align: center;
+      color: #7d7d7d;
+      font-weight: bold;
+}
+
+.stepbar-wrapper li:before {
+    width: 40px;
+    height: 40px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 36px;
+    font-size: medium;
+    border: 2px solid #7d7d7d;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: white;
+
+}
+.stepbar-wrapper li:after {
+    width: 100%;
+    height: 6px;
+    content: '';
+    position: absolute;
+    background-color: white;
+    top: 18px;
+    left: -50%;
+    z-index: -1;
+}
+
+.stepbar-wrapper li.active {
+    color: forestgreen;
+}
+
+.stepbar-wrapper 
+li:first-child:after {
+    content: none;
+}
+
+
+.stepbar-wrapper li .step {
+    transition-duration: 1.2s;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 13px;
+    visibility: hidden;    
+    width: 140px;
+    color: white;
+    border-radius: 6px;
+    padding: 20px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 119%;
+    left: 25%;
+    transition: opacity 0.3s;
+    background-color: forestgreen;
+    text-transform: lowercase !important;
+}
+
+
+.stepbar-wrapper li .step:after
+{
+    content: "";
+    position: absolute;
+    top:100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: forestgreen transparent transparent transparent;
+
+}
+
+
+.stepbar-wrapper li:hover .step,
+.stepbar-wrapper .default .step
+{
+    visibility: visible;
+    transition-duration: 1.2s;
+}
+
+.stepbar-wrapper .active:after,
+.stepbar-wrapper .active:before,
+.stepbar-wrapper .default:before{
+    transition-duration: 1.2s;
+    background-color:forestgreen;
+    color: white;
+}
+
+.stepbar-wrapper 
+li.active:before {
+    border-color: forestgreen;
+}
+

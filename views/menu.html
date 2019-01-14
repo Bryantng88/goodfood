@@ -1,0 +1,96 @@
+<div class="container" ng-init="getDayData(8)">
+    <div class="col-md-2 user-dashboard" ng-model="showWeek">
+        <div class='picture-wrapper'></div>
+        
+
+        <button class="btn btn-primary switch-week wrapper" ng-click="switchWeekShow(1)">this week</button>
+        <button class="btn btn-primary switch-week wrapper" ng-click="switchWeekShow(2)">next week</button>
+    </div>
+    <div ng-switch="showWeek">
+        <div ng-switch-default>
+            <div ng-include="'views/tables/this-week.html'"></div>
+        </div>
+        <div ng-switch-when="nextWeek">
+            <div ng-include="'views/tables/next-week.html'"></div>
+        </div>
+    </div>
+    <div class='col-md-4 items-wrapper'>
+
+        <ul ng-model="showProductItem" class='show-case'>
+            <li><button ng-click="switchItemShow(1)"></button>
+            </li>
+            <li><button ng-click="switchItemShow(2)"></button>
+            </li>
+            <li><button ng-click="switchItemShow(3)"></button></li>
+            <li><button ng-click="switchItemShow(0)">
+            </button></li>
+            <li><button ng-click="switchItemShow(4)">
+            </button></li>
+
+        </ul>
+
+
+        <div class='product-wrapper' ng-switch='showProductItem'>
+            <div ng-switch-default>
+                <h4>cac mon chinh </h4>
+                <div  ng-repeat='item in products | orderBy:"name"' class='dragzone wrapper pd'
+                    ondragstart='angular.element(this).scope().dragStart(event)' ondragend='angular.element(this).scope().dragEnd(event)'' draggable="true" id='
+                    {{item.id}}' value=' {{item.price}}'>
+                    <div class="icon-wrapper"></div>
+                    <div class="counter">{{10}}</div>
+                    <div class="status"><i class='fa fa-star'></i></div>
+
+                    {{item.name}}
+                </div>
+            </div>
+            <div  ng-switch-when="addOns">
+                <h4>today's addons: </h4>
+                <div class='dragzone wrapper ao' ng-repeat='item in addOns' draggable='true'
+                    id='{{item.id}}' ondragstart='angular.element(this).scope().dragStart(event)' ondragend='angular.element(this).scope().dragEnd(event)'
+                    value='{{item.price}}'>
+                    {{item.name}}
+                </div>
+            </div>
+            <div  ng-switch-when="juices">
+                <h4>your drinks: </h4> 
+                <div class='dragzone wrapper js' ng-repeat='item in juices' draggable='true'
+                    id='{{item.id}}' ondragstart='angular.element(this).scope().dragStart(event)' ondragend='angular.element(this).scope().dragEnd(event)'
+                    value='{{item.price}}'>
+                    <i class="fa fa-calendar" aria-hidden="true"></i>              
+                    {{item.name}}
+                </div>
+            </div>
+            <div ng-switch-when="specialRequest">
+                <h4>your request: </h4> 
+                <div  class='dragzone wrapper rq' ng-repeat='item in specialRequests'
+                    draggable='true' id='{{item.id}}' ondragstart='angular.element(this).scope().dragStart(event)'
+                    ondragend='angular.element(this).scope().dragEnd(event)''>
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    {{item.name}}
+                </div>
+            </div>
+        </div>
+        <div class="product-detail wrapper">
+            <div class='text-wrapper'>
+                <div>ten: abccc xxxxxx aaaaaaaa safdsfsx</div>
+                <div>mo ta: xxxxx bbbbbbbbb aaaaaxx gad
+                        xxxxx bbbbbbbbb aaaaaxx gad
+                        xxxxx bbbbbbbbb aaaaaxx gad
+                        xxxxx bbbbbbbbb aaaaaxx gad
+                        xxxxx bbbbbbbbb aaaaaxx gad
+                </div>
+            </div>
+            <div class="image-wrapper"></div>
+        </div>
+        <div class='show-price'><div class='icon-wrapper'></div> &nbspchi phi: <b id="pricing" ></b>
+        </div>
+    </div>
+
+
+
+                <div ng-include="'views/items/autoload-items.html'"> </div> 
+
+                    <div class='col-md-12'>
+                        <button class="btn btn-primary wrapper" ng-click="sendOrder()"><a href="#/order">confirm</a></button>
+                    </div>
+                </div>

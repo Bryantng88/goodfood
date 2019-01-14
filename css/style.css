@@ -1,0 +1,122 @@
+body{
+    font-family: 'Lato-Regular';
+    font-size: 16px;
+}
+
+
+
+/* CONTAINER  */
+.container{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer
+.container{
+    height: 300px;
+    border: 2px solid forestgreen;
+}
+
+.default-page 
+.container:nth-child(2){
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 1pt solid whitesmoke;
+    background-color: white;
+}
+
+
+
+/* NAV BAR */
+.navbar-nav li a {
+    color: #c0c0c0;
+    font-size: 18px;
+    font-family: 'Lato-Bold';
+    text-transform: uppercase;
+    line-height: 65px;
+}
+
+.navbar-nav 
+li a:hover {
+    background-color:forestgreen;
+    color: white;
+}
+
+.active {
+    color: red;
+    font-size: 50px;
+}
+
+/* MENU CONTENT */
+.content .container {
+    margin-top: 60px;
+    color: #c0c0c0 !important;
+    font-family: 'Lato-Bold';
+}
+.menu-image{
+    background-image : url(../image/food5.jpg)
+}
+
+.content .container h2 {
+    color: grey;
+}
+
+table{
+    text-align: center;
+}
+
+/* BUTTON */
+.btn:hover{
+    background-color: forestgreen;
+    color: white;
+    border-color: forestgreen;
+}
+
+.btn {
+    background-color: forestgreen;
+    border-color: forestgreen;
+    color:white;
+    margin-top:30px;
+}
+
+/*IMAGE*/
+
+.introduction 
+.container 
+.image-wrapper{
+    float: right;
+    margin-top:15px;
+    height: 350px;
+    background-image: url(../image/food7.jpg);
+    background-size:100%;
+    background-repeat: none;
+}
+
+/*PARAGRAPH*/
+
+p {
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+
+
+
+/* TEXT */
+h1{
+    margin-bottom: 30px;
+    margin-top:30px;
+    color: forestgreen;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 65px;
+    width: fit-content;
+    margin: auto;
+    height: 400px;
+    line-height: 300px;
+    color: forestgreen;
+}
+

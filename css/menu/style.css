@@ -1,0 +1,453 @@
+.items-wrapper{   
+    background-color: #FFFFFF;
+    padding-top: 10px;
+    border: 1px solid;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+/* ============================================================================================== */
+
+/* ============================================================================================== */
+
+
+table td, th{
+    border: 1px groove gainsboro;
+    border-block-end-width: thin;
+    border-style: ridge;
+    height: 80px;
+    text-align: center
+}
+
+
+table tr:first-child th {
+  background-color:cadetblue;
+  color:white;
+
+}
+
+/* table tr th:nth-child(1) {
+    background-image: url(../../image/menu-card.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: whitesmoke
+
+} */
+
+/* table tr:last-child td {
+  border-bottom: 1px solid;
+} */
+
+table tbody tr:last-child{
+    border-bottom: 1px solid;
+}
+
+table tr td:first-child,
+table tr th:first-child {
+
+  /* border-bottom: 3px groove #2ABB; */
+  width: 6%;
+  color: cadetblue;
+  border-left: 0;
+}
+
+table tr td:first-child{
+    background-color: white;
+    border-left: 1px transparent;
+    border-bottom: 1px transparent;
+}
+
+
+thead tr:nth-child(1), tbody td:nth-child(1) {
+    background-color: whitesmoke; 
+} 
+
+
+
+
+table{
+    height: 700px !important;
+    color: black;
+    text-align: center;
+    background-color: white;
+    border: 1px solid whitesmoke;
+}
+
+thead tr, thead tr th{
+    height: 50px !important;
+
+    /* .content .container .menu
+.table-wrapper{
+    height: 700px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} */
+}
+
+
+/* ============================================================================================== */
+
+.user-dashboard{
+    height: 500px;
+    background-color:white;
+    margin-right: 20px;
+    border: 1px solid;
+
+}
+
+.picture-wrapper{
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid;
+}
+
+
+.btn-wrapper .switch-week{
+    border-radius: 8px;
+    background-color: whitesmoke;
+    border-color:whitesmoke;
+    color:black;
+}
+
+.btn-wrapper .switch-week:hover{
+    background-color: darkgray;
+}
+
+.content .container .menu
+.image-wrapper{
+    background-image: url(../../image/food8.jpg);
+    background-size: contain;
+    height: 470px;
+}
+
+
+/* ============================================================================================== */
+
+.content .container 
+.show-case-wrapper{
+    margin-top: 60px;
+    display: block;
+
+}
+
+/* .show-case{
+    right: 0%;
+    top: 150%;
+} */
+
+.col-md-4 {
+    padding-right: 0;
+    padding-left: 0;
+    width: 30%;
+}
+
+ul{
+    padding-left:10px;
+    border-bottom: 1px solid;
+}
+
+.show-case li
+button {
+    margin: 0px 4px 36px 4px !important;
+    border : 0.5px solid gainsboro;
+    list-style-type: none;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    color: darkslategray;
+    font-size: larger;
+    border-radius: 50%;
+    background-color: #E9EBEE;
+    background-position: center;
+    background-repeat: no-repeat;
+    outline: 0;
+}
+
+.show-case li
+button:hover{
+    background-color: cadetblue;
+}
+
+/* .show-case 
+li:nth-child(1) button:hover {
+    background-color: plum ;
+}
+
+.show-case 
+li:nth-child(2) button:hover{
+    background-color: plum
+}  */
+
+/* .show-case 
+button:before{
+    font-family: FontAwesome;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    font-size: larger;
+    border: 2px solid whitesmoke;
+    display: inline-table;
+    text-align: center;
+    margin: 11px auto 15px auto;
+    border-radius: 50%;
+    background-color: whitesmoke;
+} */
+
+.show-case
+li button::before{
+    font-size: 9px;
+    position: relative;
+    top: 40px;
+    color:darkgrey;
+    font-weight: 600
+}
+
+li:nth-child(1) button::before{
+    content:'mon chinh';
+   
+}
+.show-case 
+li:nth-child(2) button::before{
+    content:'mon phu';
+}
+.show-case 
+li:nth-child(3) button::before{
+    content:'nuoc';
+}
+.show-case 
+li:nth-child(4) button::before{
+    content:'combo';
+}
+.show-case 
+li:nth-child(5) button::before{
+    content:'them';
+}
+
+
+.show-case 
+li:nth-child(1) button{
+    content: ".";
+    background-image: url(../../image/restaurant\ \(2\).png);
+    background-size: 80%;
+}
+
+.show-case 
+li:nth-child(2) button{
+    content: ".";
+    background-image: url(../../image/carbohydrates\ \(2\).png);
+    background-size: 80%;
+}
+
+.show-case 
+li:nth-child(3) button{
+    content: ".";
+    background-image: url(../../image/milk\ \(2\).png);
+    background-size: 80%;
+}
+.show-case 
+li:nth-child(4) button{
+    content: ".";
+    background-image: url(../../image/dinner\ \(1\).png);
+    background-size: 80%;
+}
+
+.show-case 
+li:nth-child(5) button{
+    content: ".";
+    background-image: url(../../image/addition-sign.png);
+    background-size: 40%;
+}
+
+/* .show-case 
+li:nth-child(1) button:hover{
+    background-color: brown;
+}
+
+.show-case 
+li:nth-child(2) button:hover{
+    background-color: olivedrab;
+}
+
+.show-case 
+li:nth-child(3) button:hover{
+    background-color: royalblue;
+} */
+
+
+.content .container 
+.show-case li {
+    position: absolute;
+    display: contents;
+}
+
+/*==================================================*/
+
+
+.items-wrapper {
+    margin-left: 20px;
+}
+
+
+/*==================================================*/
+
+
+.product-wrapper {
+    height: 270px;
+    /* border-top: 0.5px solid gainsboro;
+    border-bottom: 0.5px solid gainsboro; */
+}
+
+.product-wrapper .icon-wrapper {
+    background-image: url(../../image/restaurant-menu.png)
+}
+
+.product-wrapper h4 {
+    margin: 20px 5px 12px 16px;
+    color: cadetblue;
+}
+
+/*==================================================*/
+
+
+.dragzone{
+    border: 1pt solid whitesmoke;
+    height: 40px !important;
+    width: 90px;
+    text-align: left;
+    line-height: 33px;
+    margin: 8px 20px 15px 16px;
+    float: left;
+    font-size:10px;
+    white-space: nowrap;
+    background-color: whitesmoke;
+    color: cadetblue
+}
+
+.icon-wrapper{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-size: 100%;
+    float:left;
+}
+
+.dragzone .icon-wrapper:nth-child(1) {
+    background-image: url(../../image/chicken.png)
+}
+/* .dragzone .icon-wrapper:nth-child(odd) {
+    background-image: url(../../image/meat.png);
+}
+ */
+
+.dropzone div{
+    margin: 3px;
+}
+
+
+
+.show-case .pd:hover {
+    background-color: plum;
+    color: white;
+    border:none;
+}
+.show-case .ao:before{
+    border: 3px solid forestgreen;
+}
+
+.show-case .js:before{
+    border: 3px solid yellow
+}
+
+.show-case .rq:before {
+    border: 3px solid black;
+}
+
+/*==================================================*/
+
+
+.product-detail{
+    color:cadetblue;
+    font-size: 11px !important;
+    margin: 16px 17px 25px 17px;
+    height: 180px;
+    float:left;
+    padding-top: 15px;
+    padding-left: 3px;
+    line-height: 13pt;    
+    text-align: justify;
+    background-color: whitesmoke;
+}
+
+.product-detail .text-wrapper{
+    width: 50%;
+    float: left;
+}
+
+.product-detail .image-wrapper{
+    width: 40%;
+    float: right;
+    height: 130px;
+    background-image: url(../../image/lunch-box.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    border-left: 0.5px solid gainsboro;
+    background-position-y: center;
+    background-position-x: 50%;
+}
+
+/*==================================================*/
+
+
+.autoload-pd{
+    display: none;
+}
+
+td .autoload-pd{
+    display: block 
+}
+
+
+/*==========================================================================================*/
+
+.counter, .status{
+    font-size: 9px;
+    text-align: center;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    line-height: 15px;
+    position: relative;
+    float: right;
+    top: -8px;
+    right: -10px;
+    background-color: red;
+    color:white
+}
+
+
+.status {
+    background-color: green;
+    /* float:left; */
+}
+
+
+/*==========================================================================================*/
+.show-price{
+    width: 100%;
+    margin: 15px 15px 15px 0px;
+    margin-left:15px;
+    margin-top:30px;
+    font-size: 17px;
+    float: left;
+    color: cadetblue;
+}
+
+.show-price .icon-wrapper {
+    width: 30px;
+    height: 30px;
+    background-image: url(../../image/hand.png)
+}

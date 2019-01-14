@@ -1,0 +1,28 @@
+<table class='col-md-6' >
+    <thead>
+        <tr>
+            <!-- <th class='col-md-1 day-of-week'></th> -->
+            <th class='col-md-3'>breakfast</th>
+            <th class='col-md-3'>lunch</th>
+            <th class='col-md-3'>dinner</th>
+        </tr>
+    </thead>
+    <tbody id='week1'>
+        <tr ng-repeat='day in dayInWeek | limitTo: 5 : 0' id={{day.id}} >
+            <td ng-click="loadMenuOfDay(day.id)">{{day.name}}</td>
+            <td custom-drop class='dropzone' id='bf' ct-dragover='allowDrop(event)' ct-drop='drop(event)'></td>
+            <td custom-drop class='dropzone' id='lu' ct-dragover='allowDrop(event)' ct-drop='drop(event)'></td>
+            <td custom-drop class='dropzone' id='di' ct-dragover='allowDrop(event)' ct-drop='drop(event)'></td>
+        </tr>
+    </tbody>
+</table>
+
+
+<!-- custom-dragover="allowDrop(event)" 
+custom-drop="drop(event)" -->
+
+
+<!-- id={{day.id}} 
+action-on-day-click="loadMenuOfDay(day.id)"
+allow-drop = 'allowDrop(event)'
+day="{{day.name}}" -->

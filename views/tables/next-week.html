@@ -1,0 +1,18 @@
+<table class='col-md-6'>
+    <thead>
+        <tr>
+            <th class='col-md-1 day-of-week'></th>
+            <th class='col-md-3'>breakfast</th>
+            <th class='col-md-3'>lunch</th>
+            <th class='col-md-3'>dinner</th>
+        </tr>
+    </thead>
+    <tbody id='week{{week}}'>
+        <tr ng-repeat='day in dayInWeek | limitTo: 5 : 7'  id={{day.id}}>
+            <td>{{day.name}} </td>
+            <td custom-draggable class='dropzone' id='bf' ct-dragover='allowDrop(event)' ct-drop='drop(event)'></td>
+            <td custom-draggable class='dropzone' id='lu' ct-dragover='allowDrop(event)' ct-drop='drop(event)'></td>
+            <td custom-draggable class='dropzone' id='di' ct-dragover='allowDrop(event)' ct-drop='drop(event)'></td>
+        </tr>
+    </tbody>
+</table>
